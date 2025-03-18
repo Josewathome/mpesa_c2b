@@ -29,7 +29,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 load_dotenv()
 
-ALLOWED_HOSTS = ['gets-qatar-gt-nashville.trycloudflare.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['.trycloudflare.com', 'localhost', '127.0.0.1', '.vercel.app']
 #ALLOWED_HOSTS = []
 
 # Application definition

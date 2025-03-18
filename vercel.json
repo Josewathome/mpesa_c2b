@@ -1,0 +1,13 @@
+{
+    "builds": [{
+        "src": "mpesa_c2b/mpesa_c2b/wsgi.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.10" }
+    }],
+    "routes": [
+        {
+            "src": "mpesa_c2b/(.*)",
+            "dest": "mpesa_c2b/mpesa_c2b/wsgi.py"
+        }
+    ]
+}
